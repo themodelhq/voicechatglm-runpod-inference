@@ -1,5 +1,5 @@
 # GPU-enabled base image; confirm this tag is available in RunPod before building.
-FROM runpod/pytorch:2.4.0-py3.10-cuda12.1.0-devel-ubuntu22.04
+FROM pytorch/pytorch:2.4.0-cuda12.1-cudnn9-runtime
 
 ENV PYTHONUNBUFFERED=1 \
     PIP_NO_CACHE_DIR=1 \
